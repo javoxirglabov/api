@@ -1,0 +1,247 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: sans-serif;
+}
+
+.container {
+	width: 98vw;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.login__box {
+}
+
+.box {
+	z-index: 10;
+	display: none;
+}
+.box.show {
+	color: #fff;
+	text-align: center;
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: 350px;
+	background: #03045e;
+	padding: 20px;
+	border-radius: 6%;
+}
+.form_inp {
+	padding: 15px 10px;
+	border-radius: 8px;
+	border: 2.5px solid #0096c7;
+	outline: none;
+	width: 300px;
+	height: 30px;
+}
+
+.form_text {
+	padding-top: 30px;
+	font-size: 18px;
+}
+
+.form_btn {
+	border-radius: 8px;
+	margin-top: 40px;
+	padding: 8px 18px;
+	border: 1.5px solid #fff;
+	background-color: #03045e;
+	color: #fff;
+	font-size: 15px;
+}
+/* work place */
+.blur.show {
+	display: block;
+	width: 100vw;
+	position: fixed;
+	height: 100vh;
+	background-color: black;
+	opacity: 0.7;
+	z-index: 9;
+}
+.blur {
+	display: block;
+	opacity: 0;
+	z-index: auto;
+}
+
+.display {
+	width: 100vw;
+	height: 100vh;
+	background: #0077b6;
+}
+
+/* navbar  */
+nav {
+	border-bottom: 2px solid #fff;
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	position: fixed;
+	width: 100vw;
+	height: 8vh;
+	background: #0077b6;
+}
+
+.nav__logo {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	width: 20vw;
+	height: 8vh;
+}
+.nav__others{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+/* navbar  tugadi*/
+
+/* sidebar */
+.sidebar::-webkit-scrollbar {
+	width: 0;
+}
+.sidebar {
+	z-index: 5;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #0077b6;
+	width: 20vw;
+	height: 92vh;
+	border-right: 2px solid #fff;
+	overflow: auto;
+}
+
+.chats {
+	display: flex;
+	flex-direction: column;
+}
+.chat {
+	color: #fff;
+	display: flex;
+	justify-content: flex-start;
+	gap: 15px;
+	align-items: center;
+	border-bottom: 2.5px solid #fff;
+	margin: 2.5px 6px;
+	border-radius: 0 0 0 6px;
+	background: hsla(201, 100%, 36%, 1);
+
+	background: linear-gradient(
+		270deg,
+		hsla(201, 100%, 36%, 1) 72%,
+		hsla(201, 81%, 41%, 1) 79%,
+		hsla(201, 58%, 49%, 1) 86%,
+		hsla(200, 55%, 68%, 1) 93%,
+		hsla(0, 0%, 100%, 1) 100%,
+		hsla(0, 0%, 100%, 1) 100%,
+		hsla(0, 0%, 100%, 1) 100%
+	);
+
+	background: -moz-linear-gradient(
+		270deg,
+		hsla(201, 100%, 36%, 1) 72%,
+		hsla(201, 81%, 41%, 1) 79%,
+		hsla(201, 58%, 49%, 1) 86%,
+		hsla(200, 55%, 68%, 1) 93%,
+		hsla(0, 0%, 100%, 1) 100%,
+		hsla(0, 0%, 100%, 1) 100%,
+		hsla(0, 0%, 100%, 1) 100%
+	);
+
+	background: -webkit-linear-gradient(
+		270deg,
+		hsla(201, 100%, 36%, 1) 72%,
+		hsla(201, 81%, 41%, 1) 79%,
+		hsla(201, 58%, 49%, 1) 86%,
+		hsla(200, 55%, 68%, 1) 93%,
+		hsla(0, 0%, 100%, 1) 100%,
+		hsla(0, 0%, 100%, 1) 100%,
+		hsla(0, 0%, 100%, 1) 100%
+	);
+
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0077B6", endColorstr="#1482BC", GradientType=1 );
+}
+/* sidebar tugadi */
+
+/* main */
+
+.messenger {
+	position: fixed;
+	width: 80vw;
+	border-right: 3px solid #fff;
+	background: red;
+	height: 92vh;
+	z-index: 7;
+	bottom: 0;
+	right: 0;
+}
+.msg-btn {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: white;
+	outline: none;
+	padding: 17px;
+	background: #0077b6;
+	border: none;
+	font-size: 16px;
+	border-top: 3px solid #fff;
+
+	/* display: flex;
+	justify-content: flex-start;
+	align-items: center; */
+}
+
+.msg-inp {
+	border: none;
+	font-size: 16px;
+	border-top: 3px solid #fff;
+	color: white;
+	position: fixed;
+	width: 80vw;
+	bottom: 0;
+	right: 0;
+	padding: 17px;
+	outline: none;
+	background: #0077b6;
+}
+
+.msg-inp::placeholder {
+	color: white;
+	font-size: 16px;
+}
+
+.msg_container {
+	/* flex: 1; */
+	padding: 20px;
+}
+
+.msg {
+	width: 300px;
+	background-color: white;
+	padding: 10px;
+}
+
+.msg p,
+span {
+	display: block;
+	background: red;
+}
+
+.msg span {
+	display: block;
+	background: red;
+}
+/* main tugadi*/
